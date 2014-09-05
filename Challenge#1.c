@@ -22,13 +22,18 @@ int main()
 
 	printf( "Please enter your name:" );
 	scanf("%s",strName);
+
 	printf( "Please enter your age:" );
         scanf("%d",&intAge);
+
 	printf( "Please enter your Reddit user name:" );	
 	scanf("%s",strReddit);
 
-	printf( "Your name is %s, you are %d years old, and your username is %s.\n", strName, intAge, 		strReddit);
+	printf( "Your name is %s, you are %d years old, and your username is %s.\n", strName, intAge, strReddit);
 
-	fprintf(txtFile,"Your name is %s, you are %d years old, and your username is %s.\n", strName, 		intAge, strReddit); 
+	fprintf(txtFile,"Your name is %s, you are %d years old, and your username is %s.\n", strName, intAge, strReddit); 
 	
 	fclose(txtFile);
+	
+	return 0;
+}
